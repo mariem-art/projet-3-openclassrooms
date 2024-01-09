@@ -1,0 +1,47 @@
+
+/*************body************/
+body {
+    margin: 0;
+    padding:0;
+}
+a {
+    text-decoration: none;
+    list-style: none;
+}
+/**********loading************/
+.omf-loader-bg {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    position: fixed;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-delay: 3s;
+    animation-duration: 500ms;
+    animation-fill-mode: both;
+    animation: animation-bg 3s ease-in-out forwards;
+}
+@keyframes animation-bg{
+    0%{
+        opacity: 1;
+        width: 100%;
+        height:100%;
+   }
+    99%{
+        opacity: 0;
+        width: 100%;
+        height:100%;
+   }
+    100%{
+        opacity:0;
+        width: 0;
+        height:0;
+   }
+}
+.omf-loader {
+    position: absolute;
+    z-index: 1;
+    top:calc(50% - 75px);
+    left:calc(50% - 75px);
